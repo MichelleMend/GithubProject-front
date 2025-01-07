@@ -24,9 +24,10 @@ const Dashboard: React.FC = () => {
   const [repos, setRepos] = useState<Repo[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [starredRepos, setStarredRepos] = useState<Repo[]>([]);
+  const PORT = 5000;
   
   useEffect(() => {
-    fetch("http://localhost:3000/desc")
+    fetch(`http://localhost:${PORT}/desc`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch repositories");
