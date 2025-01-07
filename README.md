@@ -1,6 +1,8 @@
 
 1. clone this repo
 2. run npm i
+
+
 3.In the project directory, you can run:
 
 ### `npm start`
